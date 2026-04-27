@@ -1,0 +1,154 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #c5ebdf;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: #134e4a;
+  margin-bottom: 5px;
+}
+
+.header p {
+  color: #1e3d34;
+  opacity: 0.8;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Full width section */
+.full {
+  grid-column: span 2;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Input */
+.input {
+  width: 70%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #b2d8cc;
+  margin-bottom: 10px;
+  background: #f7fffc;
+}
+
+/* Button */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #4fbf9f;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #3aa889;
+}
+
+button:disabled {
+  background: #a0cfc1;
+  cursor: not-allowed;
+}
+
+/* File name */
+.fileName {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #134e4a;
+}
+
+/* FAQ Grid */
+.faqGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* FAQ Card */
+.faq {
+  background: #eefaf6;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+/* Question */
+.question {
+  font-weight: bold;
+  color: #0f766e;
+}
+
+/* Answer */
+.answer {
+  margin-top: 5px;
+  color: #134e4a;
+}
+
+/* Answer Box */
+.answerBox {
+  margin-top: 15px;
+  padding: 12px;
+  background: #d9f5ec;
+  border-left: 4px solid #4fbf9f;
+  border-radius: 10px;
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  font-weight: bold;
+  color: #0f766e;
+}
+
+/* Empty */
+.empty {
+  text-align: center;
+  opacity: 0.7;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full {
+    grid-column: span 1;
+  }
+
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+}
